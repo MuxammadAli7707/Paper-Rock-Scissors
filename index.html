@@ -19,52 +19,55 @@
     <div class="box animate__animated animate__bounceInDown">
       <div class="box__score">
         <h4 class="box__desc">your score</h4>
-        <p id="score" class="box__num">0</p>
+        <p id="your-score" class="box__num">0</p>
       </div>
-      <h2 class="box__title">play !</h2>
+      <h2 id="play" class="box__title">play</h2>
       <div class="box__score">
         <h4 class="box__desc">bot's score</h4>
-        <p id="score" class="box__num">0</p>
+        <p id="bot-score" class="box__num">0</p>
       </div>
     </div>
 
-    <div class="main animate__animated animate__bounceInDown">
-      <button class="main__btn paper">
+    <div id="btn-group" class="main animate__animated animate__bounceInDown">
+      <button id="paper" class="main__btn paper">
         <span class="main__back">
-          <img src="imgs/five-paper.png" alt="Paper">
+          <img class="img" src="imgs/five-paper.png" alt="Paper">
         </span>
       </button>
 
-      <button class="main__btn scissors">
+      <button id="scissors" class="main__btn scissors">
         <span class="main__back">
-          <img src="imgs/hand.png" alt="scissors">
+          <img class="img" src="imgs/hand.png" alt="scissors">
         </span>
       </button>
 
-      <button class="main__btn fist">
+      <button id="rock" class="main__btn fist">
         <span class="main__back">
-          <img src="imgs/fist.png" alt="fist">
+          <img class="img" src="imgs/fist.png" alt="fist">
         </span>
       </button>
     </div>
 
-    <div class="flex">
+    <div id="flex" class="flex">
       <div>
-        <button class="main__btn fist">
-          <span class="main__back">
-            <img src="imgs/fist.png" alt="fist">
+        <button class="flex__btn paper">
+          <span class="flex__back">
+            <img class="img" src="imgs/five-paper.png" alt="Paper">
           </span>
         </button>
       </div>
-      <button class="btn">play again</button>
+      <button id="again" class="btn">play again</button>
       <div>
-        <button class="main__btn fist">
-          <span class="main__back">
-            <img src="imgs/fist.png" alt="fist">
+        <button class="flex__btn fist">
+          <span class="flex__back">
+            <img class="img" src="imgs/fist.png" alt="fist">
           </span>
         </button>
       </div>
     </div>
+
+    <p id="win" class="check"><span class="game">GAME OVER</span><span class="win">YOU WIN</span></p> 
+    <p id="lose" class="check"><span class="game">GAME OVER</span><span class="lose">YOU LOSE</span></p>
   </div>
   <script src="js/main.js"></script>
 </body>

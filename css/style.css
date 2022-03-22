@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *,
 *::after,
 *::before {
@@ -85,6 +85,11 @@ body {
   box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15);
   margin: 10px 40px;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.main__btn:hover {
+  transform: scale(1.2);
 }
 
 .paper {
@@ -107,6 +112,29 @@ body {
   justify-content: center;
 }
 
+.flex__btn {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.flex__btn:hover {
+  transform: scale(1.2);
+}
+
+.flex__back {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn {
   border: 2px solid #fff;
   border-radius: 10px;
@@ -120,7 +148,77 @@ body {
 }
 
 .flex {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
 }
+.check {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 40px;
+  margin-top: 90px;
+  color: #fff;
+}
+.game {
+  margin-bottom: 50px;
+}
+#win {
+  display: none;
+}
+#lose {
+  display: none;
+}
+
+
+@media screen and (max-width: 520px) {
+  /* .box {
+    display: block;
+  } */
+  
+  .box__num {
+    font-size: 30px;
+  }
+  .box__title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .main__btn {
+    width: 100px;
+    height: 100px;
+  }
+  .main__back {
+    width: 80px;
+    height: 80px;
+  }
+  .main::before {
+    width: 200px;
+    height: 170px;
+  }
+
+  .flex__btn {
+    width: 100px;
+    height: 100px;
+  }
+  .flex__back {
+    width: 80px;
+    height: 80px;
+  }
+
+  .img {
+    width: 60px;
+    height: 60px;
+  }
+  .box__score {
+    padding: 10px;
+  }
+  .btn {
+    padding: 10px;
+  }
+  .check {
+    font-size: 35px;
+  }
+}
+
