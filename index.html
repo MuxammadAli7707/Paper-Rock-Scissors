@@ -29,19 +29,19 @@
     </div>
 
     <div id="btn-group" class="main animate__animated animate__bounceInDown">
-      <button id="paper" class="main__btn paper">
+      <button id="paper" value="paper" class="main__btn paper">
         <span class="main__back">
           <img class="img" src="imgs/five-paper.png" alt="Paper">
         </span>
       </button>
 
-      <button id="scissors" class="main__btn scissors">
+      <button id="scissors" value="scissors" class="main__btn scissors">
         <span class="main__back">
           <img class="img" src="imgs/hand.png" alt="scissors">
         </span>
       </button>
 
-      <button id="rock" class="main__btn fist">
+      <button id="rock" value="rock" class="main__btn fist">
         <span class="main__back">
           <img class="img" src="imgs/fist.png" alt="fist">
         </span>
@@ -50,23 +50,23 @@
 
     <div id="flex" class="flex">
       <div>
-        <button class="flex__btn paper">
+        <button class="flex__btn paper" id="color">
           <span class="flex__back">
-            <img class="img" src="imgs/five-paper.png" alt="Paper">
+            <img class="img" id="imgflex" src="" alt="Paper">
           </span>
         </button>
       </div>
       <button id="again" class="btn">play again</button>
       <div>
-        <button class="flex__btn fist">
+        <button class="flex__btn fist" id="bot">
           <span class="flex__back">
-            <img class="img" src="imgs/fist.png" alt="fist">
+            <img class="img" id="imgdflex" src="" alt="fist">
           </span>
         </button>
       </div>
     </div>
 
-    <p id="win" class="check"><span class="game">GAME OVER</span><span class="win">YOU WIN</span></p> 
+    <p id="win" class="check"><span class="game">GAME OVER</span><span class="win">YOU WIN</span></p>
     <p id="lose" class="check"><span class="game">GAME OVER</span><span class="lose">YOU LOSE</span></p>
   </div>
   <script src="js/main.js"></script>
